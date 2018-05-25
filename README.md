@@ -1,5 +1,11 @@
 # blender-extra-keyframe-controls
-A temporary script to implement Blender 2.7x's keyframing tools in the Blender 2.8 Timeline toolbar for my fellow lazy mammals who dislike learning new things.
+A little add-on which implements Blender 2.7x's keyframing tools on the Blender 2.8 Timeline toolbar, plus a bit extra.
+
+This is for my fellow lazy mammals who dislike learning new things and just want stuff how it was.
+
+The tools also include the Keyframe Interpolation setting which is usually tucked away in User Preferences. This is helpful for switching interpolation modes when adding new animation channels. New keyframes on an _existing_ channel have the same interpolation mode as the previous keyframe on that channel, so the Keyframe Interpolation setting has no effect there.
+
+NB: The official new home for the controls is either in the N menu of the Timeline (prior to 25 May 2018), in a popover menu called Keying (as of 25 May 2018) or possibly somewhere else again.
 
 ## Usage
 
