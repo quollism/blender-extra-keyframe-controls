@@ -17,12 +17,12 @@
 # ##### END GPL LICENSE BLOCK #####
 
 bl_info = {
-    "name": "Useful Animation Things from 2.79",
+    "name": "Useful Animation Tools from 2.79",
     "author": "quollism",
     "version": (0, 2),
     "blender": (2, 80, 0),
-    "description": "Putting animation tools back into the Blender 2.8 UI which disappeared since Blender 2.79",
-    "warning": "This may stop working with 2.8 API changes or it might stop being useful if someone puts the controls back. Works as of 1 June 2018.",
+    "description": "Reinstates animation-specific tools from Blender 2.79 into the 2.8 UI plus a little extra.",
+    "warning": "Not a criticism of the devs! The 2.8 UI tidy-up is justified to make it more general use but I personally found these tools useful for animation.",
     "category": "Animation"
 }
 
