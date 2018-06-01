@@ -17,12 +17,12 @@
 # ##### END GPL LICENSE BLOCK #####
 
 bl_info = {
-    "name": "Extra Keyframe Controls",
+    "name": "Useful Animation Things from 2.79",
     "author": "quollism",
-    "version": (0, 1),
+    "version": (0, 2),
     "blender": (2, 80, 0),
-    "description": "Extra keyframing controls in Timeline to assist with animation and layout",
-    "warning": "This may stop working with 2.8 API changes or it might stop being useful if someone puts the controls back. Works as of 25 May 2018.",
+    "description": "Putting animation tools back into the Blender 2.8 UI which disappeared since Blender 2.79",
+    "warning": "This may stop working with 2.8 API changes or it might stop being useful if someone puts the controls back. Works as of 1 June 2018.",
     "category": "Animation"
 }
 
@@ -48,11 +48,18 @@ def timeline_extra_controls(self, context):
         row = layout.row(align=True)
         row.prop(toolsettings, "keyframe_type", text="", icon_only=True)
 
+def view3d_extra_controls(self, context):
+    row = self.layout.row(align=True)
+    row.operator("render.opengl", text="", icon='RENDER_STILL')
+    row.operator("render.opengl", text="", icon='RENDER_ANIMATION').animation = True
+
 def register():
     bpy.types.TIME_HT_editor_buttons.append(timeline_extra_controls)
+    bpy.types.VIEW3D_HT_header.append(view3d_extra_controls)
 
 def unregister():
     bpy.types.TIME_HT_editor_buttons.remove(timeline_extra_controls)
+    bpy.types.VIEW3D_HT_header.remove(view3d_extra_controls)
 
 if __name__ == "__main__":
     register()
