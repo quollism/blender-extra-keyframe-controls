@@ -19,10 +19,10 @@
 bl_info = {
     "name": "Useful Animation Tools from 2.79",
     "author": "quollism",
-    "version": (0, 2),
+    "version": (0, 3),
     "blender": (2, 80, 0),
     "description": "Reinstates animation-specific tools from Blender 2.79 into the 2.8 UI plus a little extra.",
-    "warning": "Not a criticism of the devs! The 2.8 UI tidy-up is justified to make it more general use but I personally found these tools useful for animation.",
+    "warning": "No longer supported. Use the Keyframe popup, that's what it's there for.",
     "category": "Animation"
 }
 

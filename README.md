@@ -1,6 +1,10 @@
 # blender-useful-animation-tools-from-279
 
-*Note: This plugin is unsupported as of 14 June 2018 because it gets murdered by the UI. Use the Keying dropdown and record button on the toolbar instead.*
+## Notice
+
+*This plugin is unsupported as of 14 June 2018 because there's not really any need for it anymore. Also the toolbar UI gets in its way so it's barely usable. Use the Keying dropdown and record button on the Timeline toolbar instead.*
+
+## Features 
 
 A little add-on which reinstated Blender 2.79's animation-specific tools to Blender 2.8's Timeline and 3D View toolbar, plus a bit extra.
 
@@ -23,4 +27,4 @@ If you already have a Timeline window open, the next time you mouse over that wi
 
 ## Limitations
 
-Blender 2.8 is in the middle of heavy development at the moment. There is no telling if the bits of Blender's code used by this script are going to be changed. If such a change happens, this script will stop working. Sorry.
+Blender 2.8 was in the middle of heavy development when this script was written. The toolbar layout changed enough to make this script both unnecessary and unusable enough to call it a day.
